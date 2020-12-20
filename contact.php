@@ -45,7 +45,7 @@
               <ul>
                 <li><a href="index.html"><span><small>01</small>Startseite</span></a></li>
                 <li><a href="about.html"><span><small>02</small>Über mich</span></a></li>
-                <li class="active"><a href="contact.html"><span><small>03</small>Kontakt</span></a></li>
+                <li class="active"><a href="contact.php"><span><small>03</small>Kontakt</span></a></li>
               </ul>
             </div>
           </div>
@@ -84,23 +84,27 @@
               <p><span>Website:</span> <a href="baj.bm-it.ch">baj.bm-it.ch</a></p>
             </div>
           </div>
+          <?php
+          if(isset($_POST["submit"])){
+            mail("jbpemo@gmail.com", "Kontaktformular", 'Name: '.$_POST["name"].' Email: '.$_POST["email"]. ' Nachricht: '.$_POST["message"]);
+          ?>
           <div class="row block-9">
             <div class="col-md-6 pr-md-5">
               <form action="#">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Dein Name">
+                  <input type="text" name="name" class="form-control" placeholder="Dein Name" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Deine Email">
+                  <input type="text" name="email" class="form-control" placeholder="Deine Email" required>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Betreff">
                 </div>
                 <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Nachricht"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Nachricht"></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Nachricht senden" class="btn btn-primary py-3 px-5">
+                  <input type="submit" name="submit" value="Nachricht senden" class="btn btn-primary py-3 px-5">
                 </div>
               </form>
             
