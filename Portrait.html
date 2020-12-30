@@ -79,12 +79,36 @@
           <div class="row d-flex justify-content-center">
             <div class="col-md-8">
               <h2 class="mb-3">Über Justin Bauer</h2>
-              <p>Justin Nick Bauer ist lernender Applikationsentwickler in der Firma ESPAS Zürich. Er liest gerne Biographien und hört Metal-Core. Er ist 16 Jahre alt und seit Geburt an Sehbehindert.
-                Justin ist in Emmendingen, Deutschland am 29.11.2003 auf die Welt gekommen, als erstes Kind der Familie Bauer. Er ist zur Hälfte Deutscher und zur Hälfte Pole. Als Kleinkind stellte man bei Justin eine Sehbehinderung fest. Er Lebte 8 Jahre in Deutschland und ist dort teilweise aufgewachsen. Seine Eltern haben sich getrennt, danach ist er mit seiner Mutter und seiner kleinen Schwester zusammen in die Schweiz gezogen. Seine Grosseltern Leben aber noch in Deutschland. Trotz seiner Umstände ist er auf Regelschulen gegangen und hat sie erfolgreich abgeschlossen. 
-                Seine Lieblingssportart ist Torball doch leider kann er diesen Sport nicht oft ausüben. Justin liebt es Sport zu machen und geht auch gerne ins Fitness. Er liebt es auch neue Sportarten kennenzulernen. Justin interessiert sich in seiner Freizeit für Technik im Bereich Hardware und Software. Sein Musikstil geht in Richtung Rock und Metal, er ist auch schon auf zwei Konzerten gewesen. Das erste Konzert war mit der Band Slipknot und das zweite Konzert war mit der Band Rammstein. Justins Lieblings Buch ist 9 Tage Wach von Eric Stehfest und Michael J. Stephan. Einer seiner Stärken ist das er sehr ehrgeizig ist, doch manchmal zählt dies auch zu seinen Schwächen, da er zu ehrgeizig ist, sodass er manchmal alles um sich herum vergisst. Justin ist eine offene, sympathische Person. Seine Lebenseistellung ist: „Schreite ohne Vorurteile durchs Leben und sei offen und probiere neue Dinge aus“.
-                Sein Wünsch ist es, dass er einen guten Abschluss machen kann und so viele neue Erfahrungen wie möglich sammeln kann.
-                </p>
-              
+              <div class="game">
+                <div id="app">
+                  <transition v-on:enter="enter" v-bind:css="false" appear>
+                    <div class="butter-cheese-eggs" v-show="true">
+                      <div v-for="(block, index) in grid" @click="select(index)">
+                        <block :figure.sync="block.figure" />
+                      </div>
+                    </div>
+                  </transition>
+                  
+                  <transition v-on:enter="enterWin" v-bind:css="false">
+                    <win v-show="winner" :click-handler="restart"></win>
+                  </transition>
+                </div>
+                
+                <template id="block">
+                  <div class="block">
+                    <transition v-on:enter="enter" v-bind:css="false">
+                      <span v-show="figure > -1">{{ fig }}</span>
+                    </transition>
+                  </div>
+                </template>
+                
+                <template id="win">
+                  <div class="win">
+                    <h2>Win</h2>
+                    <!--<button @click="clickHandler">Play again</button>-->
+                  </div>
+                </template>
+              </div>
               <div class="about-author d-flex pt-5">
                 <div class="bio align-self-md-center mr-4">
                   <img src="images/janik.png" alt="Image placeholder" class="img-fluid mb-4">
