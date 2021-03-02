@@ -16,7 +16,11 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: #777;
+<<<<<<< HEAD
   
+=======
+  background: #fff;
+>>>>>>> parent of ba9be1c (tjnmt5)
 }
 
 hr {
@@ -1652,5 +1656,4 @@ img{
 #exp {
   margin-bottom: 0.5rem;
 }
-
 /*# sourceMappingURL=style.css.map */
