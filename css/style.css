@@ -447,7 +447,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-footer {
-  background: #262626;
+  background: rgb(26,26,26);
+  background: linear-gradient(0deg, rgba(26,26,26,1) 0%, rgba(255,255,255,1) 100%); 
   padding: 7em 0 0 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
