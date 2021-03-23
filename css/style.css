@@ -83,8 +83,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 ::selection {
-  color: #fff;
-  background: #52D681;
+  color: rgb(0, 0, 0);
+  background: #F9E4B7;
 }
 
 .gtco-container {
@@ -1643,9 +1643,12 @@ blockquote p > cite {
   background: #4d4d4d;
 }
 
-
-
 #exp {
   margin-bottom: 0.5rem;
+}
+
+#about-image{
+  float: right;
+  margin-left: 10em;
 }
 /*# sourceMappingURL=style.css.map */
