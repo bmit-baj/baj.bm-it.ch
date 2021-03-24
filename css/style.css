@@ -1275,9 +1275,9 @@ blockquote p > cite {
 }
 
 .btn-special {
-  background: #52D681;
-  color: #2f9051;
-  border: 2px solid #52D681;
+  background: #F9E4B7;
+  color: #000000;
+  border: 2px solid #efd49c;
 }
 .btn-special:hover, .btn-special:focus, .btn-special:active {
   color: #fff;
