@@ -1280,9 +1280,9 @@ blockquote p > cite {
   border: 2px solid #efd49c;
 }
 .btn-special:hover, .btn-special:focus, .btn-special:active {
-  color: #fff;
-  background: #52D681;
-  border-color: #52D681;
+  color: #000;
+  background: #ffd988;
+  border-color: ##efd49c;
 }
 .btn-special.btn-outline {
   color: #fff;
