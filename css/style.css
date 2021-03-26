@@ -895,7 +895,7 @@ blockquote p > cite {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: #F9E4B7;
   top: 0;
   right: 0;
   top: 0;
@@ -925,8 +925,9 @@ blockquote p > cite {
   transform: translateX(0px);
 }
 #gtco-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
+  font-size: large;
 }
 #gtco-offcanvas a:hover {
   color: rgba(255, 255, 255, 0.8);
