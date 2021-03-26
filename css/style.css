@@ -56,7 +56,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #52D681;
+  color: #ffd988;
   outline: none;
   text-decoration: none;
 }
@@ -74,12 +74,12 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #52D681;
+  background: #ffd988;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #52D681;
+  background: #ffd988;
 }
 
 ::selection {
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .gtco-nav ul li.btn-cta a {
-  color: #52D681;
+  color: ##efd49c;
 }
 .gtco-nav ul li.btn-cta a span {
   background: #fff;
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0 !important;
 }
 .gtco-cover a {
-  color: #52D681;
+  color: #efd49c;
 }
 .gtco-cover a:hover {
   color: white;
@@ -591,7 +591,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-staff .fh5co-social li a, .gtco-item .fh5co-social li a {
   font-size: 20px;
-  color: #52d681;
+  color: #ffd988;
 }
 .gtco-staff .fh5co-social li a:hover, .gtco-item .fh5co-social li a:hover {
   color: #000;
@@ -1344,7 +1344,7 @@ blockquote p > cite {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #52D681;
+  border-color: #efd49c;
 }
 
 .row-pb-md {
@@ -1397,7 +1397,7 @@ blockquote p > cite {
   margin-left: 0px;
 }
 .gtco-nav .gtco-contact ul li a i {
-  color: #52D681;
+  color: #efd49c;
 }
 .gtco-nav .gtco-contact ul li a:hover i {
   color: #fff;
