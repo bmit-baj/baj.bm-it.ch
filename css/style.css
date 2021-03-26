@@ -50,7 +50,7 @@ hr {
 }
 
 a {
-  color: #52D681;
+  color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -617,7 +617,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  color: #52D681;
+  color: #ffb824;
 }
 .gtco-news ul li a .post-date {
   text-transform: uppercase;
@@ -682,7 +682,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .gtco-contact-info ul li:before {
-  color: #cccccc;
+  color: #c59125;
   position: absolute;
   left: 0;
   top: .05em;
@@ -1650,5 +1650,9 @@ blockquote p > cite {
 #about-image{
   float: right;
   margin-left: 10em;
+}
+
+.espas-sign {
+  color: #efd49c;
 }
 /*# sourceMappingURL=style.css.map */
