@@ -42,10 +42,10 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  header(echo "<h2>PHP is Fun!</h2>";); //Mail wurde gesendet
+  header(.$url_ok); //Mail wurde gesendet
   exit();
 } else{
-  header(echo "<h2>PHP is Shit!</h2>";); //Fehler beim Senden
+  header(.$url_fehler); //Fehler beim Senden
   exit();
 }
 ?>
