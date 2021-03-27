@@ -22,8 +22,6 @@ foreach($_POST as $name => $value) {
    $msg .= "::: $name :::\n$value\n\n";
 }
  
- 
- 
 //E-Mail Adresse des Besuchers als Absender
 if ($sendermail_antwort and isset($_POST[$name_von_emailfeld]) and filter_var($_POST[$name_von_emailfeld], FILTER_VALIDATE_EMAIL)) {
    $email_from = $_POST[$name_von_emailfeld];
@@ -44,10 +42,10 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  header("Location: ".$url_ok); //Mail wurde gesendet
+  header(echo "<h2>PHP is Fun!</h2>"); //Mail wurde gesendet
   exit();
 } else{
-  header("Location: ".$url_fehler); //Fehler beim Senden
+  header(echo "<h2>PHP is Shit!</h2>"); //Fehler beim Senden
   exit();
 }
 ?>
