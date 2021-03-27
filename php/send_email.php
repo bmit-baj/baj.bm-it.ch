@@ -42,7 +42,7 @@ if($mail_senden){
   
 } else{
   //header("Location: ".$url_fehler); //Fehler beim Senden
-  echo '<script type="text/javascript" language="Javascript"> location.replace("https://baj.bm-it.ch"); alert("Nein"); </script> ';
+  echo '<script type="text/javascript" language="Javascript"> location.replace("https://baj.bm-it.ch") alert("Nein") </script> ';
   exit();
   
 }
