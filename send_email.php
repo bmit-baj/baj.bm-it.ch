@@ -4,7 +4,6 @@ $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. fa
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
 
 $empfaenger = "justin.bauer@espas.ch"; //Empfänger-Adresse
-$mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email 
 $url_ok = "https://google.ch"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
 $url_fehler = "https://espas.ch"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
@@ -28,11 +27,6 @@ if ($sendermail_antwort and isset($_POST[$name_von_emailfeld]) and filter_var($_
 }
  
 $header="From: $email_from";
- 
-if (!empty($mail_cc)) {
-   $header .= "\n";
-   $header .= "Cc: $mail_cc";
-}
  
 //Email als UTF-8 senden
 $header .= "\nContent-type: text/plain; charset=utf-8";
