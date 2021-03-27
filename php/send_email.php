@@ -36,10 +36,12 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  header("Location: ".$url_ok); //Mail wurde gesendet
-  exit();
+  //header("Location: ".$url_ok); //Mail wurde gesendet
+  //exit();
+  echo "Ja"
 } else{
-  header("Location: ".$url_fehler); //Fehler beim Senden
-  exit();
+  //header("Location: ".$url_fehler); //Fehler beim Senden
+  //exit();
+  echo "nein"
 }
 ?>
