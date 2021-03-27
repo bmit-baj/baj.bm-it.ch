@@ -5,8 +5,8 @@ $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
 
 $empfaenger = "justin.bauer@espas.ch"; //Empfänger-Adresse
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email 
-$url_ok = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
-$url_fehler = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+$url_ok = "https://baj.bm-it.ch"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
+$url_fehler = "https://baj.bm-it.ch"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
  
  
 //Diese Felder werden nicht in der Mail stehen
