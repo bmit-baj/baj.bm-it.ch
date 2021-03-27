@@ -38,10 +38,14 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
 if($mail_senden){
   //header("Location: ".$url_ok); //Mail wurde gesendet
   //exit();
-  echo "Ja";
+  <script type="text/javascript" language="Javascript">
+alert("Vielen Dank! Ihre Daten wurden uns zugesandt.")
+</script>
 } else{
   //header("Location: ".$url_fehler); //Fehler beim Senden
   //exit();
-  echo "nein";
+  <script type="text/javascript" language="Javascript">
+alert("Nein")
+</script>
 }
 ?>
