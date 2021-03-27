@@ -45,7 +45,7 @@ if($mail_senden){
   header(echo "<h2>PHP is Fun!</h2>"); //Mail wurde gesendet
   exit();
 } else{
-  header(echo "<h2>PHP is Shit!</h2>"); //Fehler beim Senden
+  header("<h2>PHP is Shit!</h2>"); //Fehler beim Senden
   exit();
 }
 ?>
