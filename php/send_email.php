@@ -36,15 +36,15 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  //header("Location: ".$url_ok); //Mail wurde gesendet
-  echo '<script type="text/javascript" language="Javascript"> alert("Vielen Dank! Ihre Daten wurden uns zugesandt.") </script> ';
   header("Location: ".$url_ok); //Mail wurde gesendet
+  echo '<script type="text/javascript" language="Javascript"> alert("Vielen Dank! Ihre Daten wurden uns zugesandt.") </script> ';
+  //header("Location: ".$url_ok); //Mail wurde gesendet
   exit();
   
 } else{
-  //header("Location: ".$url_fehler); //Fehler beim Senden
-  echo '<script type="text/javascript" language="Javascript"> alert("Nein") </script> ';
   header("Location: ".$url_fehler); //Fehler beim Senden
+  echo '<script type="text/javascript" language="Javascript"> alert("Nein") </script> ';
+  //header("Location: ".$url_fehler); //Fehler beim Senden
   exit();
   
 }
