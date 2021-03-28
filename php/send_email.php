@@ -5,8 +5,8 @@ $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
 
 $empfaenger = "justin.bauer@espas.ch"; //Empfänger-Adresse
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email 
-$url_ok = "https://baj.bm-it.ch"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
-$url_fehler = "https://baj.bm-it.ch"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+$url_ok = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
+$url_fehler = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
  
  
 //Diese Felder werden nicht in der Mail stehen
@@ -36,17 +36,15 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  //header("Location: ".$url_ok); //Mail wurde gesendet
+  header("Location: ".$url_ok); //Mail wurde gesendet
   //echo '<script type="text/javascript" language="Javascript"> alert("Vielen Dank! Ihre Daten wurden uns zugesandt.") </script> ';
   //header("Location: ".$url_ok); //Mail wurde gesendet
-  $message = "<br>Vielen Dank für Ihre Anfrage";
   exit();
   
 } else{
-  //header("Location: ".$url_fehler); //Fehler beim Senden
+  header("Location: ".$url_fehler); //Fehler beim Senden
   //echo '<script type="text/javascript" language="Javascript"> alert("Nein") </script> ';
   //header("Location: ".$url_fehler); //Fehler beim Senden
-  $message = "<br>nein";
   exit();
   
 }
