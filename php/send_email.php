@@ -8,8 +8,6 @@ $betreff = "Neue Kontaktanfrage"; //Betreff der Email
 $url_ok = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
 $url_fehler = "https://baj.bm-it.ch/contact.html"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
  
- 
-//Diese Felder werden nicht in der Mail stehen
 $ignore_fields = array('submit');
 
  
@@ -18,7 +16,7 @@ foreach($_POST as $name => $value) {
    if (in_array($name, $ignore_fields)) {
         continue; //Ignore Felder wird nicht in die Mail eingefügt
    }
-   $msg .= "::: $name :::\n$value\n\n";
+   $msg .= "$name :\n$value\n\n";
 }
  
 //E-Mail Adresse des Besuchers als Absender
@@ -38,14 +36,11 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
 if($mail_senden){
   header("Location: ".$url_ok); //Mail wurde gesendet
   //echo '<script type="text/javascript" language="Javascript"> alert("Vielen Dank! Ihre Daten wurden uns zugesandt.") </script> ';
-  //header("Location: ".$url_ok); //Mail wurde gesendet
   exit();
   
 } else{
   header("Location: ".$url_fehler); //Fehler beim Senden
   //echo '<script type="text/javascript" language="Javascript"> alert("Nein") </script> ';
-  //header("Location: ".$url_fehler); //Fehler beim Senden
   exit();
-  
 }
 ?>
