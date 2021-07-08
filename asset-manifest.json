@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.8577a5dc.chunk.js",
-    "main.js.map": "/static/js/main.8577a5dc.chunk.js.map",
+    "main.js": "/static/js/main.86b9f2c5.chunk.js",
+    "main.js.map": "/static/js/main.86b9f2c5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a28230b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.a28230b2.js.map",
     "static/css/2.c268c7e3.chunk.css": "/static/css/2.c268c7e3.chunk.css",
@@ -16,7 +16,6 @@
     "static/media/Montserrat-Regular.3cd78665.ttf": "/static/media/Montserrat-Regular.3cd78665.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/static/media/RobotoMono-Regular.418a8f9f.ttf",
-    "static/media/about_2.eaf0126a.jpg": "/static/media/about_2.eaf0126a.jpg",
     "static/media/about_3.48fa7519.png": "/static/media/about_3.48fa7519.png",
     "static/media/portfolio-jb.2a166289.jpg": "/static/media/portfolio-jb.2a166289.jpg",
     "static/media/portfolio-new.ab266066.jpg": "/static/media/portfolio-new.ab266066.jpg",
@@ -30,6 +29,6 @@
     "static/js/runtime-main.a28230b2.js",
     "static/css/2.c268c7e3.chunk.css",
     "static/js/2.beddbe0b.chunk.js",
-    "static/js/main.8577a5dc.chunk.js"
+    "static/js/main.86b9f2c5.chunk.js"
   ]
 }
